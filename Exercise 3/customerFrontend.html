@@ -1,0 +1,28 @@
+<html>
+    <head>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <title> Costumer Interaction </title>
+      <script type="text/javascript"
+        src = "formChecker.js">
+      </script>
+    </head>
+<body>
+
+    <form action="customerBackend.php" method="post">
+        <h>Bakery</h><br><br>
+        <b>Name: </b><input type="email" name="name" required><br>
+        <b>Password: </b><input type="password" name="password" required><br>
+
+        <b><h3> How many of each of the following would you like to purchase? </h3></b>
+        <b>$1.00 Cookie(s): </b><input type="number" min = "0" name="cookies"required><br>
+        <b>$3.00 Brownie(s): </b><input type="number" min = "0" name="brownies"required><br>
+        <b>$5.00 Cupcake(s): </b><input type="number" min = "0" name="cupcakes"required><br>
+        <b><h3> Shipping options: </h3></b>
+        <input type="radio" name="shipping" value="free" required> Free 7 Day<br>
+        <input type="radio" name="shipping" value="overnight"> $50.00 Over Night<br>
+        <input type="radio" name="shipping" value="threeDay"> $5.00 three day<br><br>
+        <button onclick="">Submit</button>
+        <input type="button" onclick="reset()" value="Reset form">
+    </form>
+</body>
+</html>
